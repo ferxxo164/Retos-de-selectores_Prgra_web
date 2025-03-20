@@ -1,0 +1,29 @@
+/* basico.css */
+
+/* Estilo para resaltar los elementos impares */
+ul li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+/* Estilo para resaltar los elementos pares */
+ul li:nth-child(even) {
+    background-color: #d0f0d0;
+}
+
+/* Estilo para el primer y último elemento */
+ul li:first-child {
+    color: blue;
+}
+ul li:last-child {
+    color: red;
+}
+
+/* Excluir el primer párrafo */
+div p:not(:first-child) {
+    color: orange;
+}
+
+/* Color especial para el tercer elemento de la lista */
+ul li:nth-child(3) {
+    color: purple;
+}

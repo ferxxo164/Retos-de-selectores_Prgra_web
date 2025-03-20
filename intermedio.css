@@ -1,0 +1,35 @@
+/* intermedio.css */
+
+/* Estiliza los campos de entrada requeridos */
+input:required {
+    border: 2px solid red;
+}
+
+/* Diferencia entre enlaces visitados y no visitados correctamente */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: green;
+}
+
+/* Selecciona el segundo hijo de cada fila en una tabla */
+tr td:nth-child(2) {
+    background-color: yellow;
+}
+
+/* Selecciona todos los párrafos que contengan enlaces */
+p:has(a) {
+    background-color: lightblue;
+}
+
+/* Resalta los elementos impares dentro del contenedor */
+.contenedor div:nth-child(odd) {
+    background-color: lightgray;
+}

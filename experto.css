@@ -1,0 +1,36 @@
+/* experto.css */
+
+/* Resalta las primeras tres palabras de cada párrafo */
+p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: blue;
+}
+
+p::first-line {
+    color: darkgreen;
+}
+
+/* Aplica un estilo a todos los elementos que contienen la palabra 'importante' */
+p:has(:contains('importante')) {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Cambia el borde de un <input> cuando el usuario escribe en él */
+input:focus {
+    border: 2px solid green;
+    outline: none;
+}
+
+/* Resalta todos los <p> que sean el primer hijo de su contenedor */
+p:first-of-type {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+/* Cambia el color de cada tercer elemento en una lista de 10 elementos */
+li:nth-child(3n) {
+    color: red;
+    font-weight: bold;
+}
